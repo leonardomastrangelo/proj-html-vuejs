@@ -8,41 +8,47 @@
             <!-- links -->
             <div class="col-9 d-flex justify-content-end align-items-center">
                 <ul class="d-flex justify-content-end align-items-center">
-                    <li class="p-3" :class="{ 'active': isActive('courses') }" @click="selectLink('courses')">
+                    <!-- courses -->
+                    <li :class="{ 'active': isActive('courses') }" @click="selectLink('courses')">
                         <a href="#">
-                            {{ courses }}
+                            {{ store.headerLinks.firstLink }}
                         </a>
                         <div v-if="isActive('courses')" class="active-bar"></div>
                     </li>
-                    <li class="p-3" :class="{ 'active': isActive('courses-formats') }"
-                        @click="selectLink('courses-formats')" id="courses-formats">
+                    <!-- courses-formats -->
+                    <li :class="{ 'active': isActive('courses-formats') }" @click="selectLink('courses-formats')"
+                        id="courses-formats">
                         <a href="#">
-                            {{ coursesFormats }}
+                            {{ store.headerLinks.secondLink }}
                         </a>
                         <div v-if="isActive('courses-formats')" class="active-bar"></div>
                         <ul class="sub-nav">
-                            <li v-for="link in store.subLinksFormats" class="py-2">
+                            <!-- subnav courses-formats -->
+                            <li v-for="link in store.headerLinks.subLinksFormats" class="py-2">
                                 <a href="#">
                                     {{ link }}
                                 </a>
                             </li>
                         </ul>
                     </li>
-                    <li class="p-3" :class="{ 'active': isActive('add-course') }" @click="selectLink('add-course')">
+                    <!-- add course -->
+                    <li :class="{ 'active': isActive('add-course') }" @click="selectLink('add-course')">
                         <a href="#">
-                            {{ addCourse }}
+                            {{ store.headerLinks.thirdLink }}
                         </a>
                         <div class="text-uppercase badge text-bg-danger">
                             new
                         </div>
                         <div v-if="isActive('add-course')" class="active-bar"></div>
                     </li>
-                    <li class="p-3" :class="{ 'active': isActive('pages') }" @click="selectLink('pages')" id="pages">
+                    <!-- pages -->
+                    <li :class="{ 'active': isActive('pages') }" @click="selectLink('pages')" id="pages">
                         <a href="#">
-                            {{ pages }}
+                            {{ store.headerLinks.fourthLink }}
                         </a>
                         <ul class="sub-nav">
-                            <li v-for="link in store.subLinkPages" class="py-2">
+                            <!-- subnav pages -->
+                            <li v-for="link in store.headerLinks.subLinkPages" class="py-2">
                                 <a href="#">
                                     {{ link }}
                                 </a>
@@ -50,13 +56,15 @@
                         </ul>
                         <div v-if="isActive('pages')" class="active-bar"></div>
                     </li>
-                    <li class="p-3" :class="{ 'active': isActive('demo') }" @click="selectLink('demo')" id="demo">
+                    <!-- demo -->
+                    <li :class="{ 'active': isActive('demo') }" @click="selectLink('demo')" id="demo">
                         <a href="#">
-                            {{ demo }}
+                            {{ store.headerLinks.finthLink }}
                         </a>
                         <div v-if="isActive('demo')" class="active-bar"></div>
                         <ul class="sub-nav">
-                            <li v-for="link in store.subLinksDemo" class="py-2">
+                            <!-- subnav demo -->
+                            <li v-for="link in store.headerLinks.subLinksDemo" class="py-2">
                                 <a href="#">
                                     {{ link }}
                                 </a>
@@ -66,7 +74,7 @@
                 </ul>
                 <!-- socials -->
                 <ul class="d-flex justify-content-end align-items-center ps-5">
-                    <li v-for="social in store.headerSocials" class="p-2">
+                    <li v-for="social in store.headerLinks.headerSocials" class="p-2">
                         <a href="#">
                             <i :class="`fa-brands fa-${social}`"></i>
                         </a>
@@ -84,11 +92,6 @@ export default {
         return {
             store,
             activeLink: null,
-            courses: "Courses",
-            coursesFormats: "Courses-formats",
-            addCourse: "Add-course",
-            pages: "Pages",
-            demo: "Demo"
         }
     },
     methods: {
@@ -111,6 +114,7 @@ export default {
 
     li {
         position: relative;
+        padding: 15px 35px;
 
         a {
             color: $brand_dark;
@@ -143,6 +147,7 @@ export default {
 
 .sub-nav {
     width: 250px;
+    padding: 15px 0;
     background-color: $brand_less_light;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.344);
     display: flex;
@@ -151,8 +156,9 @@ export default {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 94%;
+    top: 93%;
     left: -10%;
+    z-index: 2;
     border-top: 4px solid $brand_primary;
     transform: translateY(10px);
     transition: all 0.3s ease-in-out;
@@ -165,6 +171,11 @@ export default {
 
 
 #courses-formats:hover .sub-nav {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+#pages:hover .sub-nav {
     opacity: 1;
     transform: translateY(0px);
 }
