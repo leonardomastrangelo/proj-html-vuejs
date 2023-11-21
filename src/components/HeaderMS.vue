@@ -88,6 +88,7 @@
 <script>
 import { store } from '../assets/data/store';
 export default {
+    name: "HeaderMS",
     data() {
         return {
             store,
