@@ -2,9 +2,22 @@
 @use './partials/_variables.scss' as *;
 @import 'bootstrap/scss/bootstrap';
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,300&family=Roboto+Slab:wght@300;400;600;700;900&display=swap');
+$fa-font-path: "../webfonts";
+@import "/node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "/node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
+@import "/node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "/node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
 
 body {
     font-family: "Open Sans";
     color: #222222;
     font-size: 15px;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
 }
