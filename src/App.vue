@@ -5,6 +5,7 @@
   <CoursesSection />
   <CallToAction />
   <WhyCourses />
+  <InfoComponent />
 </template>
 
 <script>
@@ -15,6 +16,7 @@ import FounderSection from './components/FounderSection.vue';
 import CoursesSection from './components/CoursesSection.vue'
 import CallToAction from './components/CallToAction.vue';
 import WhyCourses from './components/WhyCourses.vue';
+import InfoComponent from './components/InfoComponent.vue';
 
 export default {
   components: {
@@ -23,7 +25,8 @@ export default {
     FounderSection,
     CoursesSection,
     CallToAction,
-    WhyCourses
+    WhyCourses,
+    InfoComponent
   },
   data() {
     return {

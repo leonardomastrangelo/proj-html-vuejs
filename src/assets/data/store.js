@@ -124,4 +124,30 @@ export const store = reactive({
         "Vestibulum vitae aliquam nunc. Suspendisse mollis metus ac tellus egestas pharetra. Suspendisse at viverra purus. Pellentesque nec posuere ligula, eu congue leo. Integer vulputate tempor arcu. Vestibulum vulputate",
     },
   ],
+  infos: [
+    {
+      icon: "fa-user-group",
+      title: "Online Learner",
+      number: 7450,
+      max: 7500,
+    },
+    {
+      icon: "fa-photo-film",
+      title: "Video Courses",
+      number: 30,
+      max: 55,
+    },
+    {
+      icon: "fa-image",
+      title: "Sliders $ Images",
+      number: 999,
+      max: 1060,
+    },
+    {
+      icon: "fa-thumbs-up",
+      title: "Excellent Reviews",
+      number: 3240,
+      max: 3330,
+    },
+  ],
 });
