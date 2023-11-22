@@ -170,4 +170,50 @@ export const store = reactive({
         "It is no exaggeration to say this MasterStudy experience was transformative–both professionally and personally. This workshop will long remain a high point of my life. Thanks again…. I am feeling energized and eager to start teaching my class next week. I can’t wait to use all of my new teaching tools. I will absolutely recommend this workshop to other educators!",
     },
   ],
+  footerLinks: [
+    {
+      title: "about",
+      subLinks: [
+        "Masterstudy is Education WordPress theme featured by Learning",
+        "Management System (LMS) for online education",
+        "Developed by StylemixThemes.",
+      ],
+      icons: ["fa-facebook", "fa-twitter", "fa-instagram"],
+    },
+    {
+      title: "contact",
+      subLinks: [
+        "USA, Callifornia 20, First Avenue, Callifornia",
+        `Tel.: +1 212 458 300 32`,
+        `Fax: +1 212 375 24 14`,
+        "info@masterstudy.com",
+      ],
+    },
+    {
+      title: "pages",
+      subLinks: [
+        "blog",
+        "home",
+        "typography",
+        "courses",
+        "shortcodes",
+        "membership L...",
+      ],
+    },
+    {
+      title: "blog",
+      blogs: {
+        blog1: {
+          image: "/images/blog-1.jpeg",
+          title: "Our main target is to “Developing Yourself as a Leader”",
+          release: "August 9, 2018",
+        },
+        blog2: {
+          image: "/images/blog-2.jpeg",
+          title: "Those Other College Expenses You Aren`t Thinking About",
+          release: "June 3, 2015",
+        },
+      },
+    },
+  ],
 });

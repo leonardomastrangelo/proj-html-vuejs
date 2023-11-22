@@ -20,7 +20,7 @@
                 <div>
                     <i v-for="n in 5" class="fa-solid fa-star"></i>
                 </div>
-                <p class="w-50 h-100 m-auto py-4">
+                <p class="w-50 m-auto py-4">
                     {{ store.students[activeStudent].description }}
                 </p>
             </div>
@@ -90,6 +90,7 @@ export default {
     p {
         line-height: 2.5em;
         color: $brand_secondary;
+        height: 210px;
     }
 
     .active {

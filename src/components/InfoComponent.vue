@@ -25,7 +25,6 @@ export default {
     data() {
         return {
             store,
-            max: 50
         }
     },
     methods: {

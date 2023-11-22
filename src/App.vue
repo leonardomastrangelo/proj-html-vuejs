@@ -7,6 +7,7 @@
   <WhyCourses />
   <InfoComponent />
   <StudentsSection />
+  <FooterMS />
 </template>
 
 <script>
@@ -19,6 +20,7 @@ import CallToAction from './components/CallToAction.vue';
 import WhyCourses from './components/WhyCourses.vue';
 import InfoComponent from './components/InfoComponent.vue';
 import StudentsSection from './components/StudentsSection.vue';
+import FooterMS from './components/FooterMS.vue';
 
 export default {
   components: {
@@ -29,7 +31,8 @@ export default {
     CallToAction,
     WhyCourses,
     InfoComponent,
-    StudentsSection
+    StudentsSection,
+    FooterMS
   },
   data() {
     return {
