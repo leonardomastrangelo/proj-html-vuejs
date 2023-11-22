@@ -3,6 +3,7 @@
   <HeroComponent />
   <FounderSection />
   <CoursesSection />
+  <CallToAction />
 </template>
 
 <script>
@@ -11,13 +12,15 @@ import HeaderMS from './components/HeaderMS.vue'
 import HeroComponent from './components/HeroComponent.vue';
 import FounderSection from './components/FounderSection.vue';
 import CoursesSection from './components/CoursesSection.vue'
+import CallToAction from './components/CallToAction.vue';
 
 export default {
   components: {
     HeaderMS,
     HeroComponent,
     FounderSection,
-    CoursesSection
+    CoursesSection,
+    CallToAction
   },
   data() {
     return {
