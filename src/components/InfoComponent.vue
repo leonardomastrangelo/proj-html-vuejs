@@ -1,5 +1,5 @@
 <template>
-    <div class="parallax-container" @scroll="handleScroll" @mouseover="increaseNums">
+    <div id="info-component" class="parallax-container" @scroll="handleScroll" @mouseover="increaseNums">
         <ul class="content d-flex">
             <li v-for="info in store.infos" class="d-flex px-4">
                 <div class="d-flex align-items-center px-4">
