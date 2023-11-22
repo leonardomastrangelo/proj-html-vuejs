@@ -98,4 +98,30 @@ export const store = reactive({
       special: false,
     },
   ],
+  whyCourses: [
+    {
+      icon: "fa-briefcase",
+      title: "Entrepeneurship",
+      paragraph:
+        "Vestibulum vitae aliquam nunc. Suspendisse mollis metus ac tellus egestas pharetra. Suspendisse at viverra purus. Pellentesque nec posuere ligula, eu congue leo. Integer vulputate tempor arcu. Vestibulum vulputate",
+    },
+    {
+      icon: "fa-rocket",
+      title: "Accelerated learning",
+      paragraph:
+        "Vestibulum vitae aliquam nunc. Suspendisse mollis metus ac tellus egestas pharetra. Suspendisse at viverra purus. Pellentesque nec posuere ligula, eu congue leo. Integer vulputate tempor arcu. Vestibulum vulputate",
+    },
+    {
+      icon: "fa-thumbs-up",
+      title: "Productivity",
+      paragraph:
+        "Vestibulum vitae aliquam nunc. Suspendisse mollis metus ac tellus egestas pharetra. Suspendisse at viverra purus. Pellentesque nec posuere ligula, eu congue leo. Integer vulputate tempor arcu. Vestibulum vulputate",
+    },
+    {
+      icon: "fa-gear",
+      title: "Life Coaching",
+      paragraph:
+        "Vestibulum vitae aliquam nunc. Suspendisse mollis metus ac tellus egestas pharetra. Suspendisse at viverra purus. Pellentesque nec posuere ligula, eu congue leo. Integer vulputate tempor arcu. Vestibulum vulputate",
+    },
+  ],
 });

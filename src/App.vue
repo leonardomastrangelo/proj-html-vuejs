@@ -4,6 +4,7 @@
   <FounderSection />
   <CoursesSection />
   <CallToAction />
+  <WhyCourses />
 </template>
 
 <script>
@@ -13,6 +14,7 @@ import HeroComponent from './components/HeroComponent.vue';
 import FounderSection from './components/FounderSection.vue';
 import CoursesSection from './components/CoursesSection.vue'
 import CallToAction from './components/CallToAction.vue';
+import WhyCourses from './components/WhyCourses.vue';
 
 export default {
   components: {
@@ -20,7 +22,8 @@ export default {
     HeroComponent,
     FounderSection,
     CoursesSection,
-    CallToAction
+    CallToAction,
+    WhyCourses
   },
   data() {
     return {

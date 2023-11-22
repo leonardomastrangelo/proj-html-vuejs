@@ -30,8 +30,8 @@ export default {
     },
     computed: {
         bookStyle() {
-            const translateX = this.mouseX / -100;
-            const translateY = this.mouseY / -100;
+            const translateX = this.mouseX / -60;
+            const translateY = this.mouseY / -60;
 
             return {
                 transform: `translate(${translateX}px, ${translateY}px)`,
