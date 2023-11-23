@@ -1,8 +1,8 @@
 <template>
-    <div class="container rounded-3 mt-5">
+    <div class="container rounded-3 my-5">
         <div class="row">
             <!-- left col : CALL TO ACTION -->
-            <div class="col-6">
+            <div class="col-12 col-lg-6">
                 <h2>
                     <span>
                         Limited Sale:
@@ -17,7 +17,7 @@
                 </div>
             </div>
             <!-- right col : COUNTDOWN -->
-            <div class="col-6">
+            <div class="col-12 col-lg-6">
                 <div class="row h-100 align-items-center text-center">
                     <div class="col-3">
                         <span>{{ days }}</span>

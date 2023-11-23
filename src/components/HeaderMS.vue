@@ -2,12 +2,15 @@
     <div class="container py-3">
         <div class="row">
             <!-- logo -->
-            <div class="col-3 d-flex align-items-center justify-content-center">
-                <img src="/images/MasterStudy-1.svg" alt="">
+            <div class="col-3 align-items-center justify-content-center d-none d-xl-flex">
+                <img src="/images/MasterStudy-1.svg" alt="logo">
+            </div>
+            <div class="col-3 d-flex align-items-center justify-content-center d-xl-none">
+                <img id="mini-logo" src="/images/favicon.ico" alt="logo">
             </div>
             <!-- links -->
             <div class="col-9 d-flex justify-content-end align-items-center">
-                <ul class="d-flex justify-content-end align-items-center">
+                <ul class="justify-content-end align-items-center d-none d-xl-flex">
                     <!-- courses -->
                     <li :class="{ 'active': isActive('courses') }" @click="selectLink('courses')">
                         <a href="#">
@@ -72,8 +75,23 @@
                         </ul>
                     </li>
                 </ul>
+                <!-- dropdown -->
+                <div class="dropdown d-xl-none">
+                    <button class="bg-light border-0 fs-3 dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Courses</a></li>
+                        <li><a class="dropdown-item" href="#">Courses-formats</a></li>
+                        <li><a class="dropdown-item" href="#">Add-Course</a></li>
+                        <li><a class="dropdown-item" href="#">Pages</a></li>
+                        <li><a class="dropdown-item" href="#">Demo</a></li>
+
+                    </ul>
+                </div>
                 <!-- socials -->
-                <ul class="d-flex justify-content-end align-items-center ps-5">
+                <ul class="justify-content-end align-items-center ps-5 d-none d-xl-flex">
                     <li v-for="social in store.headerLinks.headerSocials" class="p-2">
                         <a href="#">
                             <i :class="`fa-brands fa-${social}`"></i>
@@ -128,6 +146,10 @@ export default {
             }
         }
     }
+}
+
+#mini-logo {
+    width: 30px;
 }
 
 .badge {
@@ -189,5 +211,9 @@ export default {
 #demo:hover .sub-nav {
     opacity: 1;
     transform: translateY(0px);
+}
+
+.dropdown-toggle::after {
+    display: none !important;
 }
 </style>

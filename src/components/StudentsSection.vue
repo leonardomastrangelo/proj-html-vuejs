@@ -6,10 +6,10 @@
                 <img v-for=" (student, index) in store.students" :src="student.image" :alt="student.title"
                     class="px-2 rounded-circle" :class="{ 'active': activeStudent === index }" :key="index"
                     @click="setActive(index)">
-                <button class="left" @click="goLeft">
+                <button class="left d-none d-lg-block" @click="goLeft">
                     <i class="fa-solid fa-arrow-left"></i>
                 </button>
-                <button class="right" @click="goRight">
+                <button class="right d-none d-lg-block" @click="goRight">
                     <i class="fa-solid fa-arrow-right"></i>
                 </button>
             </div>
@@ -20,7 +20,7 @@
                 <div>
                     <i v-for="n in 5" class="fa-solid fa-star"></i>
                 </div>
-                <p class="w-50 m-auto py-4">
+                <p class=" px-3 m-auto py-4">
                     {{ store.students[activeStudent].description }}
                 </p>
             </div>
@@ -91,6 +91,13 @@ export default {
         line-height: 2.5em;
         color: $brand_secondary;
         height: 210px;
+        width: 100%;
+    }
+
+    @media screen and (min-width: 992px) {
+        p {
+            width: 50%;
+        }
     }
 
     .active {

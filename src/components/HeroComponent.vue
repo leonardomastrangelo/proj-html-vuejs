@@ -1,8 +1,8 @@
 <template>
     <section id="hero" class="py-5">
         <div class="container d-flex justify-content-end align-items-center h-75">
-            <div class="w-50">
-                <h1>
+            <div class="intro">
+                <h1 class="display-3 fw-bold">
                     Start your Human <span>Revolution</span> today
                 </h1>
                 <p>
@@ -53,5 +53,15 @@ h1 span {
 .container p {
     font-size: 1.2em;
     padding: 20px 0;
+}
+
+.intro {
+    width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+    .intro {
+        width: 50%;
+    }
 }
 </style>

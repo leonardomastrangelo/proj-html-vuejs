@@ -1,8 +1,8 @@
 <template>
     <footer>
         <div class="container">
-            <div class="row">
-                <div class="col-3" id="about">
+            <div class="row justify-content-center">
+                <div class="col-6 col-lg-4 col-xl-3 mb-5" id="about">
                     <h4>
                         {{ store.footerLinks[0].title }}
                     </h4>
@@ -17,7 +17,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-3">
+                <div class="col-6 col-lg-4 col-xl-3">
                     <h4>
                         {{ store.footerLinks[1].title }}
                     </h4>
@@ -27,7 +27,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-3" id="pages">
+                <div class="col-6 col-lg-4 col-xl-3" id="pages">
                     <h4>
                         {{ store.footerLinks[2].title }}
                     </h4>
@@ -37,7 +37,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-3">
+                <div class="col-6 col-lg-4 col-xl-3">
                     <h4>
                         {{ store.footerLinks[3].title }}
                     </h4>

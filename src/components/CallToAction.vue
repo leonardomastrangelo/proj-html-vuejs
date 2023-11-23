@@ -2,12 +2,12 @@
     <section id="call-to-action" @mousemove="handleMouseMove">
         <div class="container">
             <div class="row">
-                <div class="col-5 text-center">
+                <div class="col-12 col-lg-5 text-center">
                     <h2>{{ title }}</h2>
                     <p>{{ paragraph }}</p>
                     <img :src="callImg" alt="buy-amazon">
                 </div>
-                <div class="col-7" id="book">
+                <div class="col-12 col-lg-7" id="book">
                     <img src="/images/book.png" alt="book" ref="book" :style="bookStyle">
                 </div>
             </div>

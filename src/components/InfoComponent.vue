@@ -1,20 +1,22 @@
 <template>
     <div id="info-component" class="parallax-container" @scroll="handleScroll" @mouseover="increaseNums">
-        <ul class="content d-flex">
-            <li v-for="info in store.infos" class="d-flex px-4">
-                <div class="d-flex align-items-center px-4">
-                    <i class="fa-solid" :class="info.icon"></i>
-                </div>
-                <div>
-                    <h2>
-                        {{ info.number }}
-                    </h2>
-                    <h3>
-                        {{ info.title }}
-                    </h3>
-                </div>
-            </li>
-        </ul>
+        <div class="container">
+            <ul class="content row">
+                <li v-for="info in store.infos" class="col-12 col-md-6 col-xl-3 d-flex justify-content-center px-4 py-3">
+                    <div class="d-flex align-items-center px-4">
+                        <i class="fa-solid" :class="info.icon"></i>
+                    </div>
+                    <div>
+                        <h2>
+                            {{ info.number }}
+                        </h2>
+                        <h3>
+                            {{ info.title }}
+                        </h3>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
 </template>
 

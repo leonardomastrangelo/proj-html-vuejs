@@ -1,8 +1,8 @@
 <template>
-    <section class="container" id="founder-section">
+    <section class="container mt-5" id="founder-section">
         <div class="row justify-content-center">
             <!-- left-col -->
-            <div class="col-5">
+            <div class="col-12 col-lg-5">
                 <h2>
                     {{ title }}
                 </h2>
@@ -10,7 +10,7 @@
                     <img :src="sign" alt="sign">
                 </div>
             </div>
-            <div class="col-5">
+            <div class="col-12 col-lg-5">
                 <p>
                     {{ paragraph }}
                 </p>
@@ -34,7 +34,7 @@ export default {
 
 <style lang="scss" scoped>
 .container {
-    padding-top: 200px;
+    padding-top: 230px;
     padding-bottom: 100px;
 
     h2 {

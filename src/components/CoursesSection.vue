@@ -4,8 +4,8 @@
             <h2>
                 {{ title }}
             </h2>
-            <div class="row">
-                <div class="col-4" v-for="course in store.courses ">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-5 col-xl-4" v-for="course in store.courses ">
                     <CoursesCard :image="course.image" :title="course.title" :type="course.type" :level="course.level"
                         :lectures="course.lectures" :time="course.hours" :special="course.special" :price="course.price" />
                 </div>
