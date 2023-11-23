@@ -1,13 +1,16 @@
 <template>
-  <HeaderMS />
-  <HeroComponent />
-  <FounderSection />
-  <CoursesSection />
-  <CallToAction />
-  <WhyCourses />
-  <InfoComponent />
-  <StudentsSection />
-  <FooterMS />
+  <div class="position-relative">
+    <SettingsComponent />
+    <HeaderMS />
+    <HeroComponent />
+    <FounderSection />
+    <CoursesSection />
+    <CallToAction />
+    <WhyCourses />
+    <InfoComponent />
+    <StudentsSection />
+    <FooterMS />
+  </div>
 </template>
 
 <script>
@@ -21,6 +24,7 @@ import WhyCourses from './components/WhyCourses.vue';
 import InfoComponent from './components/InfoComponent.vue';
 import StudentsSection from './components/StudentsSection.vue';
 import FooterMS from './components/FooterMS.vue';
+import SettingsComponent from './components/SettingsComponent.vue';
 
 export default {
   components: {
@@ -32,7 +36,8 @@ export default {
     WhyCourses,
     InfoComponent,
     StudentsSection,
-    FooterMS
+    FooterMS,
+    SettingsComponent
   },
   data() {
     return {
