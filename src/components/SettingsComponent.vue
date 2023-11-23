@@ -4,8 +4,7 @@
             back-end demo
         </button>
         <div class="my-dropdown px-2">
-            <button class="bg-dark text-light border-0 px-3 py-2 rounded-bottom-2" type="button"
-                @click="() => isActive = !isActive">
+            <button class="bg-dark text-light border-0 px-3 py-2" type="button" @click="() => isActive = !isActive">
                 <i class="fa-solid fa-bars"></i>
             </button>
             <ul class="my-dropdown-menu rounded-top-2" :class="(isActive) ? 'd-block' : 'd-none'">
@@ -85,6 +84,8 @@ button {
     font-weight: 600;
     opacity: 0;
     transition: all 0.2s ease-in-out;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
 }
 
 .my-dropdown-menu {
@@ -102,6 +103,10 @@ button {
 
 .dropdown-item:hover .external {
     opacity: 1;
+}
+
+.dropdown-item {
+    transition: all 0.2s ease-in-out;
 }
 
 .dropdown-item:hover {

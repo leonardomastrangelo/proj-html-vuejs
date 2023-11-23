@@ -40,7 +40,7 @@ export default {
 @use '../assets/css/partials/variables.scss' as *;
 
 #hero {
-    height: 85vh;
+    height: 84.6vh;
     width: 100%;
     background-image: url('/images/slide-1.jpg');
     background-size: cover;
